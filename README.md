@@ -34,7 +34,7 @@
         - [ ] `decrement`メソッドを持つ
         - [ ] `decrement`メソッドを実行すると`_count`プロパティの値は1増える
 10. [ ] 「npm test」を実行して9で実装したテストが全て失敗することを確認する
-11. [ ] 「test/src/Counter.spec.js」のテストが全て成功するように「src/Counter.js」に機能を実装していく
+11. [ ] 「test/src/Counter.spec.js」のテストが全て成功するように「src/Counter.js」に機能を実装していく
 
 
 ## 答え
