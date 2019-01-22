@@ -16,12 +16,16 @@
 
 1. [ ] package.jsonを作る
 2. [ ] node_modulesをgitのバージョン管理から除外する
-3. [ ] テスト用のライブラリとして「[mocha](https://mochajs.org/)」と「[power-assert](https://github.com/power-assert-js/power-assert)」をdevDependenciesにインストールする
-4. [ ] package.jsonのscriptsを修正して「npm test」でmochaが実行されるようにする
+3. [ ] テスト用のライブラリとして「[mocha](https://mochajs.org/)」と「[power-assert](https://github.com/power-assert-js/power-assert)」を `devDependencies` にインストールする
+4. [ ] package.jsonのscriptsを修正して「npm test」で `mocha` が実行されるようにする
 5. [ ] プロジェクトのルートディレクトリ直下にsrcディレクトリを作成して、srcディレクトリの中に「Counter.js」というファイルを作成する
 6. [ ]  プロジェクトのルートディレクトリ直下にtestディレクトリを作成する。その後、testディレクトリの中にsrcディレクトリを作成する
-7. [ ] 「test/src」ディレクトリの中に「Counter.spec.js」という「src/Counter.js」のテストファイルを作成する
-8. [ ] 「test/src/Counter.spec.js」には以下のテストを実装する
+7. [ ] testディレクトリの中に [`mocha.opts`](https://mochajs.org/#mochaopts)ファイルを作成して「--recursive」オプションを追加する
+    - 参照 :
+        - `mocha.opts` について : https://mochajs.org/#mochaopts
+        - `--recursive` について : https://mochajs.org/#the-test-directory
+8. [ ] 「test/src」ディレクトリの中に「Counter.spec.js」という「src/Counter.js」に対応するテストファイルを作成する
+9. [ ] 「test/src/Counter.spec.js」には以下のテストを実装する
     - [ ] Counterクラスは
         - [ ] `_count`プロパティを持つ
         - [ ] `_count`プロパティの初期値は0である
@@ -29,13 +33,13 @@
         - [ ] `increment`メソッドを実行すると`_count`プロパティの値は1増える
         - [ ] `decrement`メソッドを持つ
         - [ ] `decrement`メソッドを実行すると`_count`プロパティの値は1増える
-9. [ ] 「npm test」を実行して8で実装したテストが全て失敗することを確認する
-10. [ ] 「test/src/Counter.spec.js」のテストが全て成功するように「src/Counter.js」に機能を実装していく
+10. [ ] 「npm test」を実行して9で実装したテストが全て失敗することを確認する
+11. [ ] 「test/src/Counter.spec.js」のテストが全て成功するように「src/Counter.js」に機能を実装していく
 
 
 ## 答え
 
-このレポジトリの`answer`ブランチに答えを用意しているので、そちらを参考にしていただけたらと思います。
+このレポジトリの `answer` ブランチに答えを用意しているので、そちらを参考にしていただけたらと思います。
 
 ## 参考記事
 
